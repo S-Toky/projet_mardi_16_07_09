@@ -1,15 +1,3 @@
-=begin
-def decripte(lettre, chiffre)
-	valeur = ""	#initialisation d'une chaine vide
-  lettre.scan(/./) do |i| #refaire à nouveau chaque caractère de la chaine
-  	if ("a".."z").include? (i.downcase)#verification de chaque lettre de "a" à "z" 
-      chiffre.times {i = i.next}
-  	end
-      valeur << i[-1]
-  end
-    return valeur	
-=end
-
 
 def decripte(lettre,chiffre)
 	valeur = lettre.ord
